@@ -376,6 +376,63 @@ h1, h2, h3, h4, h5, h6 {
     color: #f8fafc;
 }
 
+/* Skills Icons Grid */
+.skills-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.skill-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(30, 27, 75, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    text-align: center;
+}
+
+.skill-icon-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(245, 158, 11, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon-item i {
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon-item img.skill-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.skill-icon-item:hover i {
+    transform: scale(1.1);
+}
+
+.skill-icon-item:hover img.skill-logo {
+    transform: scale(1.1);
+}
+
+.skill-icon-item span {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 .skill-item {
     margin-bottom: 2rem;
 }
@@ -535,6 +592,31 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #f59e0b;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #d97706;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+}
+
+.project-btn i {
+    font-size: 1.1rem;
 }
 
 /* Testimonials Section */
